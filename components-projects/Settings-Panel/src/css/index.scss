@@ -1,0 +1,194 @@
+$myBlack: #393939;
+$myWhite: #f2f2f3;
+$bodyBG: #f2f2f3;
+$myGrey: rgba(128, 128, 128, 0.527);
+$hoverMB: rgba(255, 255, 255, 0.2);
+$hoverSubMB: rgb(118, 138, 248);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $bodyBG;
+    overflow: hidden;
+}
+
+.hidden {
+    pointer-events: none;
+}
+
+#Settings {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    #Container {
+        height: 100%;
+        width: 100%;
+        max-width: 1150px;
+        padding: 30px;
+        position: relative;
+        display: flex;
+    }
+    #SideBar {
+        width: 220px;
+        height: 100%;
+        overflow: auto;
+        flex-shrink: 0;
+        .group {
+            text-align: end;
+            span {
+                color: $myGrey;
+                font-size: 18px;
+                font-weight: 900;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 0 15px 0 0;
+            }
+            margin: 0 0 30px 0;
+        }
+        .category {
+            overflow: hidden;
+            font-size: 20px;
+            text-align: end;
+            color: $myGrey;
+            transition: all 0.2s;
+            text-overflow: ellipsis;
+            font-weight: 600;
+            padding: 3px 0 3px 0;
+            &:hover {
+                color: rgb(201, 194, 194);
+            }
+            margin: 0 15px 0 0;
+        }
+        .active {
+            font-size: 30px;
+            font-weight: 700;
+            color: $myWhite;
+        }
+    }
+    #settingsBreak {
+        width: 2px;
+        background-color: $myGrey;
+        margin: 0 30px 0 15px;
+        flex-shrink: 0;
+    }
+    #Content {
+        flex-grow: 1;
+        height: 100%;
+        border: solid 1px rgba(254, 254, 255, 0.048);
+        overflow-y: auto;
+    }
+    #CloseButt {
+        flex-shrink: 0;
+        color: $myWhite;
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        border: solid 2px $myGrey;
+        border-radius: 100px;
+        font-size: 20px;
+        margin: 0 0 0 20px;
+
+        transition: all 0.1s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        &:active {
+            transform: translateY(3px);
+        }
+    }
+
+    span {
+        color: white;
+        font-size: 16px;
+    }
+}
+
+#MainWindow {
+    width: 100vw;
+    height: 100vh;
+
+    transition: scale 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), filter 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#Decoration {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    div {
+        margin: 35px 0 0 35px;
+        border-radius: 20px;
+    }
+    button {
+        position: absolute;
+        top: 49px;
+        left: 50px;
+        background-color: #303531;
+        border-radius: 10px;
+        display: inline-block;
+        box-shadow: 0px 2px 10px #373f36;
+        border: none;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Verdana;
+        font-size: 24px;
+        padding: 16px 31px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #949794;
+
+        &:hover {
+            background-color: #4c534e;
+        }
+
+        &:active {
+            background-color: #272b28;
+        }
+    }
+    .red {
+        background-color: rgb(199, 146, 146);
+    }
+
+    .green {
+        background-color: rgb(165, 199, 162);
+    }
+
+    .purple {
+        background-color: rgb(174, 149, 202);
+    }
+
+    .blue {
+        background-color: rgb(142, 184, 204);
+    }
+
+    .yellow {
+        background-color: rgb(204, 216, 175);
+    }
+
+    .orange {
+        background-color: rgb(199, 179, 154);
+    }
+}
