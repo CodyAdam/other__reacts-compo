@@ -1,7 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-
 ## What is this ?
 
 This is a single React component that allow you to make custom resize bar for your panels.
@@ -22,6 +20,6 @@ This is a single React component that allow you to make custom resize bar for yo
 -   `minPos` the minimum % position of the bar (10% by default)
 -   `maxPos` the maximum % position of the bar (90% by default)
 
-![Screen of the JSX code](https://github.com/CodyAdam/react-components/blob/master/components-projects/resizable-panel/ScreenCode.png?raw=true)
-
-![Gif demo](https://github.com/CodyAdam/react-components/blob/master/components-projects/resizable-panel/demo.gif?raw=true)
+![preview](https://github.com/CodyAdam/react-components/blob/master/Resizable-Panel/preview.gif?raw=true)
+![Screen of the JSX code](https://github.com/CodyAdam/react-components/blob/master/Resizable-Panel/ScreenCode.png?raw=true)
+![Gif demo](https://github.com/CodyAdam/react-components/blob/master/Resizable-Panel/demo.gif?raw=true)

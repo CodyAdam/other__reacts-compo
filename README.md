@@ -1,4 +1,5 @@
 This repository is a bundle of react components I made when I started learning react
+It is using the old react class component system (no hooks)
 
 
 # Quick preview
