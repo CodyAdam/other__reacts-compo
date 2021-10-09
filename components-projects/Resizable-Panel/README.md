@@ -22,6 +22,6 @@ This is a single React component that allow you to make custom resize bar for yo
 -   `minPos` the minimum % position of the bar (10% by default)
 -   `maxPos` the maximum % position of the bar (90% by default)
 
-![Screen of the JSX code](https://github.com/CodyAdam/react-components/blob/master/resizable-panel/ScreenCode.png?raw=true)
+![Screen of the JSX code](https://github.com/CodyAdam/react-components/blob/master/components-projects/resizable-panel/ScreenCode.png?raw=true)
 
-![Gif demo](https://github.com/CodyAdam/react-components/blob/master/resizable-panel/demo.gif?raw=true)
+![Gif demo](https://github.com/CodyAdam/react-components/blob/master/components-projects/resizable-panel/demo.gif?raw=true)
